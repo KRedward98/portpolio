@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./mainscreen.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="mainscree.js" defer></script>
+    <script src="topBar.js" defer></script>
+  </head>
+  <body>
+    <div id="mainContainer">
+      <div id="topBar">
+        <div id="topBarLeft">
+          <ul id="topBarleftNavigation" class="navigation"></ul>
+        </div>
+        <div id="topBarRight">
+          <ul id="topBarRightNavigation" class="navigation navigationReverse">
+            <li id="topBarRightNavTimeSet"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="underBar">
+      <ul id="underBarNav" class="navigation"></ul>
+    </div>
+    <div id="upperHoverContainer"></div>
+
+    <div id="finderContatiner">
+      <div id="finderUpper">
+        <input id="finderUpperInput" type="text" placeholder="Search" />
+      </div>
+      <div id="finderLower"></div>
+    </div>
+  </body>
+</html>

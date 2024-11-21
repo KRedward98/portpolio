@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box; /* 패딩과 보더를 높이와 너비에 포함 */
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  background-image: url(./icons/wall1.jpg);
+  background-size: cover;
+}
+
+#mainContainer {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#topBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgba(187, 187, 187, 0.264);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity, 0.3s ease-in-out;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.navigationReverse {
+  flex-direction: row-reverse;
+}
+
+#underBar {
+  border-radius: 20px;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translate(-50%, -10%); /* 요소를 중심으로 이동 */
+  width: 150px;
+  height: 70px;
+  background-color: rgba(187, 187, 187, 0.572);
+  z-index: 10; /* 높을 수록 위에 옴*/
+  transition: 0.1s ease-in-out;
+}
+
+#finderContatiner {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.695);
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  flex-direction: column;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity, 0.3s ease-in-out;
+  padding: 20px;
+}
+
+#upperHoverContainer {
+  display: none;
+  position: absolute;
+  top: 23px;
+  left: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+#underBarNav li {
+  color: red;
+  display: block;
+
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+}
+
+#underBarNav {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#LaunchPadIcon {
+  background-image: url(./icons/Launchpad.png);
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+#finderLower {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 한 행에 4개 */
+
+  grid-auto-rows: 200px; /* 행의 높이 고정 */
+  place-items: center;
+  width: 90%;
+  height: 80%;
+}
+
+#finderUpper {
+  margin: 20px;
+}
+
+.appBox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+  margin: 1vw;
+  width: 9vw;
+  height: 9vw;
+  border-radius: 5px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.appImage {
+  height: 80%;
+  width: 80%;
+  margin: 0;
+  padding: 0;
+
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.appName {
+  height: 20%;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
