@@ -1,0 +1,34 @@
+#FolderContainer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow-y: auto;
+}
+
+#FolderContainer > button {
+  position: fixed;
+  top: 2vh;
+  left: 1vw;
+  font-size: x-large;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  color: #ff9320;
+}
+
+#FolderInnerContent {
+  width: 100%;
+  height: 100%;
+  padding: 4vw;
+}
+
+#FolderInnerContent * {
+  color: aliceblue;
+  padding: 0.5vh;
+}
+
+a {
+  color: #ff9320;
+}

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimal-ui" />
+    <title>Edward's Portpolio</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/message.css" />
+    <link rel="stylesheet" href="./css/phone.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/folder.css" />
+    <script src="./index.js" defer></script>
+    <script src="./js//phone.js" defer></script>
+    <script src="./js//skills.js" defer></script>
+    <script src="./js//message.js" defer></script>
+    <script src="./js/folder.js"></script>
+  </head>
+  <body id="body">
+    <section id="topBar">
+      <div id="DataBar"></div>
+      <div id="TimeBar"></div>
+      <div id="BatterBar"></div>
+    </section>
+    <section id="upperContainer"></section>
+    <section id="lowerContainer"></section>
+    <div id="background"></div>
+
+    <div id="text-container"></div>
+    <div id="PhoneContainer" class="contentPages fade show">
+      <button class="return">&lt;</button>
+      <div id="PhoneHeader">
+        <div id="Profile">Profile</div>
+        <div id="PhoneHeaderIcons">
+          <div>Github</div>
+          <div>Linkedin</div>
+          <div>Location</div>
+        </div>
+      </div>
+      <div id="PhoneContent">
+        <div class="phoneBox">
+          <div>Education</div>
+          <div>Harper College</div>
+        </div>
+        <div class="phoneBox">
+          <div>Phone</div>
+          <div>+1 224-226-0884</div>
+        </div>
+        <div class="phoneBox">
+          <div>email</div>
+          <div>gentlegyu98@gmail.com</div>
+        </div>
+        <div class="phoneBox">
+          <div>DOB</div>
+          <div>1998.02.15</div>
+        </div>
+        <div class="phoneBox">
+          <div>Note</div>
+          <div>
+            I am a proactive developer who wants to learn more and more and
+            more!
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="SkillsContainer" class="contentPages">
+      <button class="return">&lt; Return</button>
+      <h1>Word Search Game</h1>
+      <div id="board"></div>
+
+      <div id="word-list">
+        <h3>Find These Words:</h3>
+        <ul id="word-items"></ul>
+      </div>
+
+      <div id="message"></div>
+
+      <div id="buttons">
+        <button id="start-button" onclick="startGame()">🎮 Game Start</button>
+        <button
+          id="restart-button"
+          onclick="restartGame()"
+          style="display: none"
+        >
+          🔁 Restart
+        </button>
+        <button
+          id="cancel-button"
+          onclick="cancelSelection()"
+          style="display: none"
+        >
+          ❌ 선택취소
+        </button>
+      </div>
+    </div>
+    <div id="FolderContainer" class="contentPages">
+      <button class="return">&lt; Return</button>
+      <div id="FolderInnerContent">
+        <div>
+          <h1>First Project</h1>
+          <h2>
+            <a href="#" target="_blank">[Link to be added]</a>
+          </h2>
+
+          <h3>Name :</h3>
+          <p>Konglish – English Learning Website</p>
+
+          <h3>Language :</h3>
+          <p>HTML, CSS, JavaScript, JSON</p>
+
+          <h3>Learning Point :</h3>
+          <p>
+            - Explored how to effectively structure and manage JSON files<br />
+            - Deepened understanding of CSS for mobile-first design<br />
+            - Gained hands-on experience with responsive web design and its
+            limitations on mobile<br />
+            - Realized the value of scalable design early in development
+          </p>
+
+          <h3>Challenges Faced :</h3>
+          <p>
+            As the project targeted mobile users, it was difficult to create a
+            smooth user experience in a traditional web environment. I also
+            struggled with how best to structure and utilize JSON data.
+          </p>
+
+          <h3>How I Overcame Them :</h3>
+          <p>
+            I spent time researching best practices for JSON structure and
+            mobile-friendly layouts. This process also sparked my interest in
+            mobile development, which led me to begin studying React Native.
+          </p>
+
+          <h3>Takeaways :</h3>
+          <p>
+            This project marked the beginning of my journey into mobile app
+            development. It taught me how important it is to understand both
+            data structuring and UI design when building learning platforms for
+            language learners.
+          </p>
+        </div>
+
+        <div>
+          <h1>Second Project</h1>
+          <h2>
+            <a href="#" target="_blank">[Link to be added]</a>
+          </h2>
+
+          <h3>Name :</h3>
+          <p>Portfolio Prototype using Axure</p>
+
+          <h3>Language :</h3>
+          <p>Axure RP (Prototyping Tool)</p>
+
+          <h3>Learning Point :</h3>
+          <p>
+            - Learned how to create interactive prototypes using Axure<br />
+            - Gained insights into the importance of UX planning before
+            development<br />
+            - Explored concepts of responsive design through prototyping
+          </p>
+
+          <h3>Challenges Faced :</h3>
+          <p>
+            Since I had never used prototyping tools before, it was challenging
+            to translate design ideas into interactive wireframes. Understanding
+            responsive behavior in the prototype also took time to grasp.
+          </p>
+
+          <h3>How I Overcame Them :</h3>
+          <p>
+            Through trial and error, I gradually understood how Axure worked and
+            how powerful a prototype can be in communicating design intent. This
+            experience changed the way I approach new projects.
+          </p>
+
+          <h3>Takeaways :</h3>
+          <p>
+            This project helped me realize the critical role of prototypes in
+            the development process. It also emphasized the importance of
+            considering responsiveness from the very beginning of any web or app
+            project.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="MessageContainer" class="contentPages">
+      <div id="MessageTopContainer">
+        <button class="return">&lt;</button>
+        <div id="profile">
+          <div>E</div>
+          <p>Edward</p>
+        </div>
+        <div id="MessageStart" class="chatContainer">
+          <div id="MessageMiddleContainer" class="message left">
+            Hello this is Edward's life experiences. Click the questions you
+            would like to hear from me! Here are some keywords you can use :
+            working history, learning, position and role, self describtion
+          </div>
+        </div>
+
+        <div id="MessageInputContainer">
+          <button id="plutBtn">+</button>
+          <div id="input_container">
+            <input type="text" /> <button id="voice_btn"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
